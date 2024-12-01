@@ -1,12 +1,42 @@
-# JavaScript Project
+# JavaScript Concepts and Features Explanation
 
-## Overview
-This project demonstrates the use of JavaScript to build interactive and dynamic web applications. It includes features such as DOM manipulation, event handling, API integration, and basic data management.
+## **Features of the Project**
+1. **Dynamic UI Updates**  
+   - The project uses JavaScript to manipulate the DOM dynamically.
+   - Tasks can be added and removed in real-time without refreshing the page.
 
-## Features
-- **Dynamic UI Updates**: Real-time changes to the interface using DOM manipulation.
-- **Event Handling**: Responsive user interactions with JavaScript event listeners.
-- **API Integration**: Fetching and displaying data from external APIs.
-- **Modular Code**: Organized into reusable functions for maintainability.
+2. **Event Handling**  
+   - The `addTaskBtn` button listens for click events to add tasks.
+   - Each task has a delete button that listens for a click event to remove it.
 
+3. **Separation of Concerns**  
+   - HTML for structure, CSS for styling, and JavaScript for functionality.
+   - Encourages maintainable and scalable code.
 
+4. **Interactive User Experience**  
+   - Provides instant feedback when tasks are added or removed.
+   - Prevents users from adding empty tasks by validating input.
+
+---
+
+## **JavaScript Concepts**
+
+### **1. Callback Functions**
+- **Definition**:  
+  A function passed as an argument to another function to be executed later.
+  
+- **Use Case**:  
+  Useful for asynchronous operations like handling events or making API calls.
+
+- **Example**:
+  ```javascript
+  function fetchData(callback) {
+      setTimeout(() => {
+          console.log("Data fetched");
+          callback();
+      }, 1000);
+  }
+
+  fetchData(() => {
+      console.log("Callback executed!");
+  });
