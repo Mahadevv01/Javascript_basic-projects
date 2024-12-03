@@ -15,7 +15,7 @@
 
 4. **Interactive User Experience**  
    - Provides instant feedback when tasks are added or removed.
-   - Prevents users from adding empty tasks by validating input.
+   
 
 ---
 
