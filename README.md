@@ -25,8 +25,7 @@
 - **Definition**:  
   A function passed as an argument to another function to be executed later.
   
-- **Use Case**:  
-  Useful for asynchronous operations like handling events or making API calls.
+
 
 - **Example**:
   ```javascript
